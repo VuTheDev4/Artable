@@ -19,6 +19,7 @@
 		EAABD85D234C110300271CE5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EAABD85B234C110300271CE5 /* Main.storyboard */; };
 		EAABD862234C110600271CE5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EAABD860234C110600271CE5 /* LaunchScreen.storyboard */; };
 		EAABD868234C115E00271CE5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EAABD844234C102800271CE5 /* Assets.xcassets */; };
+		EAABD86A234C15B800271CE5 /* LoginStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EAABD869234C15B800271CE5 /* LoginStoryboard.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -37,6 +38,7 @@
 		EAABD85C234C110300271CE5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		EAABD861234C110600271CE5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		EAABD863234C110600271CE5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EAABD869234C15B800271CE5 /* LoginStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LoginStoryboard.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,6 +84,7 @@
 				EAABD83B234C102200271CE5 /* AppDelegate.swift */,
 				EAABD83D234C102200271CE5 /* SceneDelegate.swift */,
 				EAABD83F234C102200271CE5 /* ViewController.swift */,
+				EAABD869234C15B800271CE5 /* LoginStoryboard.storyboard */,
 				EAABD841234C102200271CE5 /* Main.storyboard */,
 				EAABD846234C102800271CE5 /* LaunchScreen.storyboard */,
 				EAABD849234C102800271CE5 /* Info.plist */,
@@ -192,6 +195,7 @@
 				EAABD848234C102800271CE5 /* LaunchScreen.storyboard in Resources */,
 				EAABD845234C102800271CE5 /* Assets.xcassets in Resources */,
 				EAABD843234C102200271CE5 /* Main.storyboard in Resources */,
+				EAABD86A234C15B800271CE5 /* LoginStoryboard.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
