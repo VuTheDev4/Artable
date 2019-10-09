@@ -28,7 +28,7 @@ class RegisterVC: UIViewController {
         
         guard let email = emailTxt.text , !email.isEmpty ,
             let username = usernameTxt.text, !username.isEmpty ,
-            let password = passwordTxt.text, !password.isEmpty else {return}
+            let password = passwordTxt.text, !password.isEmpty else { return }
         
         Auth.auth().createUser(withEmail: email, password: password) { (authResults, error) in
             
@@ -37,7 +37,7 @@ class RegisterVC: UIViewController {
                 return
             }
             
-            guard let user = authResults?.user else{return}
+            guard let user = authResults?.user else { return }
             print("\(user.email!) created")
         }
     }
