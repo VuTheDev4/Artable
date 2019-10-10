@@ -12,6 +12,7 @@
 		EA3C0FB5234D48C300E1F05D /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = EA3C0FB4234D48C300E1F05D /* GoogleService-Info.plist */; };
 		EA3C0FBB234D680E00E1F05D /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA3C0FBA234D680E00E1F05D /* LoginVC.swift */; };
 		EA3C0FBD234D681F00E1F05D /* RegisterVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA3C0FBC234D681F00E1F05D /* RegisterVC.swift */; };
+		EA6EE15E234ECCAB005D115D /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA6EE15D234ECCAB005D115D /* Extensions.swift */; };
 		EAABD83C234C102200271CE5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAABD83B234C102200271CE5 /* AppDelegate.swift */; };
 		EAABD83E234C102200271CE5 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAABD83D234C102200271CE5 /* SceneDelegate.swift */; };
 		EAABD840234C102200271CE5 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAABD83F234C102200271CE5 /* ViewController.swift */; };
@@ -39,6 +40,7 @@
 		EA3C0FB4234D48C300E1F05D /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		EA3C0FBA234D680E00E1F05D /* LoginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
 		EA3C0FBC234D681F00E1F05D /* RegisterVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterVC.swift; sourceTree = "<group>"; };
+		EA6EE15D234ECCAB005D115D /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		EAABD838234C102200271CE5 /* Artable.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Artable.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EAABD83B234C102200271CE5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EAABD83D234C102200271CE5 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -133,6 +135,14 @@
 			path = Storyboards;
 			sourceTree = "<group>";
 		};
+		EA6EE15C234ECC1B005D115D /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				EA6EE15D234ECCAB005D115D /* Extensions.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
 		EAABD82F234C102200271CE5 = {
 			isa = PBXGroup;
 			children = (
@@ -184,6 +194,7 @@
 		EAABD867234C113200271CE5 /* Shared */ = {
 			isa = PBXGroup;
 			children = (
+				EA6EE15C234ECC1B005D115D /* Utils */,
 				EAABD844234C102800271CE5 /* Assets.xcassets */,
 			);
 			path = Shared;
@@ -412,6 +423,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				EAABD840234C102200271CE5 /* ViewController.swift in Sources */,
+				EA6EE15E234ECCAB005D115D /* Extensions.swift in Sources */,
 				EAABD83C234C102200271CE5 /* AppDelegate.swift in Sources */,
 				EA3C0FBB234D680E00E1F05D /* LoginVC.swift in Sources */,
 				EAABD83E234C102200271CE5 /* SceneDelegate.swift in Sources */,
