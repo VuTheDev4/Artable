@@ -70,8 +70,7 @@ class RegisterVC: UIViewController {
             }
             
             guard let user = authResults?.user else { return }
-            
-            
+            self.activityIndicator.stopAnimating()
             print("\(user.email!) created")
         }
     }
