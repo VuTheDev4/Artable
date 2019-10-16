@@ -29,6 +29,7 @@ class RegisterVC: UIViewController {
         
     }
     
+    //Password matching feature
     @objc func textFieldDidChange(_ textField: UITextField) {
         
         guard let passText = passwordTxt.text else { return }
@@ -70,7 +71,6 @@ class RegisterVC: UIViewController {
             
             guard let user = authResults?.user else { return }
             
-            self.activityIndicator.stopAnimating()
             
             print("\(user.email!) created")
         }
