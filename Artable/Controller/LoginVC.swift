@@ -21,6 +21,7 @@ class LoginVC: UIViewController {
     }
     
     @IBAction func forgotPassClicked(_ sender: Any) {
+        
     }
     
     @IBAction func loginClicked(_ sender: Any) {
@@ -41,6 +42,7 @@ class LoginVC: UIViewController {
         Auth.auth().signIn(withEmail: email, password: password) { authResult, error in
           
             if let error = error {
+                self.handlFireAuthError(error: error)
                 self.activityIndicator.stopAnimating()
                 debugPrint(error)
                 return

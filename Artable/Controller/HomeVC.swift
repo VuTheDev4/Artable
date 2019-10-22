@@ -10,17 +10,25 @@ import UIKit
 import Firebase
 
 class HomeVC: UIViewController {
+    
     @IBOutlet weak var loginOutBtn: UIBarButtonItem!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
         
+        if Auth.auth().currentUser == nil {
+            Auth.auth().signInAnonymously { (result, error) in
+                if let error = error {
+                    debugPrint(error)
+                    self.handlFireAuthError(error: error)
+                }
+            }
+        }
     }
     
     override func viewDidAppear(_ animated: Bool) {
         
-        if let _ = Auth.auth().currentUser {
+        if let user = Auth.auth().currentUser, !user.isAnonymous {
             loginOutBtn.title = "Logout"
         } else {
             loginOutBtn.title = "Login"
@@ -29,21 +37,40 @@ class HomeVC: UIViewController {
 
     @IBAction func loginOutClicked(_ sender: Any) {
         
-        if let _ = Auth.auth().currentUser {
-            
+        guard let user = Auth.auth().currentUser else { return }
+        
+        if user.isAnonymous {
+            presentLoginController()
+        } else {
             do {
                 try Auth.auth().signOut()
-                presentLoginController()
+                Auth.auth().signInAnonymously { (result, error) in
+                    if let error = error {
+                        debugPrint(error)
+                        self.handlFireAuthError(error: error)
+                    }
+                    self.presentLoginController()
+                }
             } catch {
-                debugPrint(error.localizedDescription)
+                self.handlFireAuthError(error: error)
+                debugPrint(error)
             }
-        } else {
-            presentLoginController()
         }
+        
+//        if let _ = Auth.auth().currentUser {
+//
+//            do {
+////                try Auth.auth().signOut()
+//                presentLoginController()
+//            } catch {
+//                debugPrint(error.localizedDescription)
+//            }
+//        } else {
+//            presentLoginController()
+//        }
     }
     
     fileprivate func presentLoginController() {
-        
         let storyboard = UIStoryboard(name: Storyboard.Loginstoryboard, bundle: nil)
         let controller = storyboard.instantiateViewController(identifier: StoryboardId.LoginVC)
         present(controller, animated: true, completion: nil)

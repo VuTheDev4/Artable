@@ -62,16 +62,18 @@ class RegisterVC: UIViewController {
         
         activityIndicator.startAnimating()
         
-        Auth.auth().createUser(withEmail: email, password: password) { (authResults, error) in
-            
+        guard let authUser = Auth.auth().currentUser else { return }
+        
+        let credential = EmailAuthProvider.credential(withEmail: email, password: password)
+        
+        authUser.link(with: credential) { (result, error) in
             if let error = error {
-                print(error.localizedDescription)
+                debugPrint(error)
+                self.handlFireAuthError(error: error)
                 return
             }
-            
-            guard let user = authResults?.user else { return }
             self.activityIndicator.stopAnimating()
-            print("\(user.email!) created")
+            self.dismiss(animated: true, completion: nil)
         }
     }
 }
