@@ -8,6 +8,16 @@
 
 /* Begin PBXBuildFile section */
 		1F0CE1CF38EB078C3FD5A2DC /* Pods_ArtableAdmin.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E329F9EB411B9E85392289DD /* Pods_ArtableAdmin.framework */; };
+		EA22F2A12372661400A9D98D /* ForgotPasswordVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA22F29F2372661400A9D98D /* ForgotPasswordVC.swift */; };
+		EA22F2A22372661400A9D98D /* ForgotPasswordVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = EA22F2A02372661400A9D98D /* ForgotPasswordVC.xib */; };
+		EA22F2A4237336CF00A9D98D /* Firebase + Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA22F2A3237336CF00A9D98D /* Firebase + Utils.swift */; };
+		EA22F2A5237338D400A9D98D /* Firebase + Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA22F2A3237336CF00A9D98D /* Firebase + Utils.swift */; };
+		EA22F2A72373460C00A9D98D /* Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA22F2A62373460C00A9D98D /* Category.swift */; };
+		EA22F2A82373461600A9D98D /* Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA22F2A62373460C00A9D98D /* Category.swift */; };
+		EA22F2AB237347CC00A9D98D /* CategoryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA22F2A9237347CC00A9D98D /* CategoryCell.swift */; };
+		EA22F2AC237347CC00A9D98D /* CategoryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA22F2A9237347CC00A9D98D /* CategoryCell.swift */; };
+		EA22F2B4237387B500A9D98D /* CategoryCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = EA22F2B1237387B500A9D98D /* CategoryCell.xib */; };
+		EA22F2B5237387B500A9D98D /* CategoryCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = EA22F2B1237387B500A9D98D /* CategoryCell.xib */; };
 		EA3C0FB3234D089800E1F05D /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = EA3C0FB2234D089800E1F05D /* GoogleService-Info.plist */; };
 		EA3C0FB5234D48C300E1F05D /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = EA3C0FB4234D48C300E1F05D /* GoogleService-Info.plist */; };
 		EA3C0FBB234D680E00E1F05D /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA3C0FBA234D680E00E1F05D /* LoginVC.swift */; };
@@ -38,6 +48,12 @@
 		B64976007A1220AC14598011 /* Pods-Artable.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Artable.release.xcconfig"; path = "Pods/Target Support Files/Pods-Artable/Pods-Artable.release.xcconfig"; sourceTree = "<group>"; };
 		DA728859549FD7AB3594877B /* Pods-ArtableAdmin.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ArtableAdmin.release.xcconfig"; path = "Pods/Target Support Files/Pods-ArtableAdmin/Pods-ArtableAdmin.release.xcconfig"; sourceTree = "<group>"; };
 		E329F9EB411B9E85392289DD /* Pods_ArtableAdmin.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ArtableAdmin.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		EA22F29F2372661400A9D98D /* ForgotPasswordVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgotPasswordVC.swift; sourceTree = "<group>"; };
+		EA22F2A02372661400A9D98D /* ForgotPasswordVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ForgotPasswordVC.xib; sourceTree = "<group>"; };
+		EA22F2A3237336CF00A9D98D /* Firebase + Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Firebase + Utils.swift"; sourceTree = "<group>"; };
+		EA22F2A62373460C00A9D98D /* Category.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Category.swift; sourceTree = "<group>"; };
+		EA22F2A9237347CC00A9D98D /* CategoryCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryCell.swift; sourceTree = "<group>"; };
+		EA22F2B1237387B500A9D98D /* CategoryCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CategoryCell.xib; sourceTree = "<group>"; };
 		EA3C0FB2234D089800E1F05D /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		EA3C0FB4234D48C300E1F05D /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		EA3C0FBA234D680E00E1F05D /* LoginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
@@ -103,6 +119,23 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		EA22F29E237265AD00A9D98D /* XIBs */ = {
+			isa = PBXGroup;
+			children = (
+				EA22F29F2372661400A9D98D /* ForgotPasswordVC.swift */,
+				EA22F2A02372661400A9D98D /* ForgotPasswordVC.xib */,
+			);
+			path = XIBs;
+			sourceTree = "<group>";
+		};
+		EA22F2AF2373481D00A9D98D /* Xibs */ = {
+			isa = PBXGroup;
+			children = (
+				EA22F2B1237387B500A9D98D /* CategoryCell.xib */,
+			);
+			path = Xibs;
+			sourceTree = "<group>";
+		};
 		EA3C0FB6234D676E00E1F05D /* Controller */ = {
 			isa = PBXGroup;
 			children = (
@@ -125,6 +158,7 @@
 		EA3C0FB8234D677A00E1F05D /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				EA22F2A62373460C00A9D98D /* Category.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -144,6 +178,7 @@
 			children = (
 				EA6EE15D234ECCAB005D115D /* Extensions.swift */,
 				EA6EE15F234F7358005D115D /* Constants.swift */,
+				EA22F2A3237336CF00A9D98D /* Firebase + Utils.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -152,6 +187,7 @@
 			isa = PBXGroup;
 			children = (
 				EA6EE1612350C7C1005D115D /* RoundedViews.swift */,
+				EA22F2A9237347CC00A9D98D /* CategoryCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -180,10 +216,10 @@
 		EAABD83A234C102200271CE5 /* Artable */ = {
 			isa = PBXGroup;
 			children = (
-				EA3C0FB9234D678100E1F05D /* Storyboards */,
-				EA3C0FB8234D677A00E1F05D /* Model */,
+				EA22F29E237265AD00A9D98D /* XIBs */,
 				EA3C0FB7234D677400E1F05D /* View */,
 				EA3C0FB6234D676E00E1F05D /* Controller */,
+				EA3C0FB9234D678100E1F05D /* Storyboards */,
 				EA3C0FB2234D089800E1F05D /* GoogleService-Info.plist */,
 				EAABD849234C102800271CE5 /* Info.plist */,
 			);
@@ -207,6 +243,8 @@
 		EAABD867234C113200271CE5 /* Shared */ = {
 			isa = PBXGroup;
 			children = (
+				EA22F2AF2373481D00A9D98D /* Xibs */,
+				EA3C0FB8234D677A00E1F05D /* Model */,
 				EA6EE1632350C7D2005D115D /* View */,
 				EA6EE15C234ECC1B005D115D /* Utils */,
 				EAABD844234C102800271CE5 /* Assets.xcassets */,
@@ -298,9 +336,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				EAABD848234C102800271CE5 /* LaunchScreen.storyboard in Resources */,
+				EA22F2B4237387B500A9D98D /* CategoryCell.xib in Resources */,
 				EAABD845234C102800271CE5 /* Assets.xcassets in Resources */,
 				EA3C0FB3234D089800E1F05D /* GoogleService-Info.plist in Resources */,
 				EAABD843234C102200271CE5 /* Main.storyboard in Resources */,
+				EA22F2A22372661400A9D98D /* ForgotPasswordVC.xib in Resources */,
 				EAABD86A234C15B800271CE5 /* LoginStoryboard.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -309,6 +349,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EA22F2B5237387B500A9D98D /* CategoryCell.xib in Resources */,
 				EAABD862234C110600271CE5 /* LaunchScreen.storyboard in Resources */,
 				EAABD868234C115E00271CE5 /* Assets.xcassets in Resources */,
 				EA3C0FB5234D48C300E1F05D /* GoogleService-Info.plist in Resources */,
@@ -441,9 +482,13 @@
 				EAABD83C234C102200271CE5 /* AppDelegate.swift in Sources */,
 				EA3C0FBB234D680E00E1F05D /* LoginVC.swift in Sources */,
 				EA6EE1622350C7C1005D115D /* RoundedViews.swift in Sources */,
+				EA22F2A12372661400A9D98D /* ForgotPasswordVC.swift in Sources */,
 				EA6EE160234F7358005D115D /* Constants.swift in Sources */,
 				EAABD83E234C102200271CE5 /* SceneDelegate.swift in Sources */,
+				EA22F2A4237336CF00A9D98D /* Firebase + Utils.swift in Sources */,
 				EA3C0FBD234D681F00E1F05D /* RegisterVC.swift in Sources */,
+				EA22F2A72373460C00A9D98D /* Category.swift in Sources */,
+				EA22F2AB237347CC00A9D98D /* CategoryCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -452,8 +497,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				EAABD85A234C110300271CE5 /* ViewController.swift in Sources */,
+				EA22F2A82373461600A9D98D /* Category.swift in Sources */,
 				EAABD856234C110300271CE5 /* AppDelegate.swift in Sources */,
+				EA22F2A5237338D400A9D98D /* Firebase + Utils.swift in Sources */,
 				EAABD858234C110300271CE5 /* SceneDelegate.swift in Sources */,
+				EA22F2AC237347CC00A9D98D /* CategoryCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -617,6 +665,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = SL2PQN527J;
 				INFOPLIST_FILE = Artable/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -636,6 +685,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = SL2PQN527J;
 				INFOPLIST_FILE = Artable/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
